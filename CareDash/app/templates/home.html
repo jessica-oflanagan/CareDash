@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<link rel= "stylesheet" type= "text/css" href= "../static/css/home.css">
+<script src = "../static/js/home.js"></script>
+<head>
+<div class="wrapper">
+
+<!--- Header and top dropdown buttons -->
+<div class="inline-block">
+	<img src="../static/img/logo.png" class="logo"/>
+
+	<div class="dropdown">
+    <button class="dropbtn">Find A Physician</button>
+    <div class="dropdown-content">
+    <a href="https://www.caredash.com/find-a-doctor">Search to Find A Doctor</a>
+    <a href="https://www.caredash.com/articles/how-to-find-the-right-medical-specialist">How To: Find the Right Specialist for Your Needs</a>
+    <a href="https://www.caredash.com/articles/how-to-pick-your-primary-care-physician">How To: Choose the Right Physician</a>
+    </div>
+    </div>
+
+    <div class="dropdown">
+    <button class="dropbtn">Review A Physician</button>
+    <div class="dropdown-content">
+    <a href="https://www.caredash.com/review-your-doctor">Search to Review A Doctor</a>
+    <a href="https://www.caredash.com/articles/how-to-find-the-right-medical-specialist">How To: Write A Review for Your Doctor</a>
+    </div>
+    </div>
+
+    <div class="dropdown">
+    <button class="dropbtn">Other Content</button>
+    <div class="dropdown-content">
+    <a href="https://www.caredash.com/articles/family">Family</a>
+    <a href="https://www.caredash.com/articles/health-101">Health 101</a>
+    <a href="https://www.caredash.com/news">CareDash News</a>
+    <a href="https://www.caredash.com/articles/living-well">Living Well</a>
+    </div>
+    </div>
+
+	<script type="text/javascript" src = "../static/js/home.js"></script>
+</div>
+
+   <form id="regForm" action="">
+
+<!---  image slideshow -->
+<br> <br> <br> <br>
+
+<div class="main_view">
+<div id="slideshow">
+    <div class="slide-wrapper">
+    <div class="slide"> <a href="https://www.caredash.com/find-a-doctor"></a> </div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </div>
+</div>
+
+<!---  form for providers -->
+
+  <div class="container">
+    <form class="providerInfo" method="post" action="/process">
+      <br/>
+      <p class="pageText20">Sign Up with CareDash to Edit Your Provider Profile</p>
+      <hr>
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" id="inputName" name="name" placeholder="Enter First Name" name="firstname" required>
+
+	  <label id="lastname"><b>Last Name</b></label>
+      <input type="text" name="lastname" placeholder="Enter Last Name" name="lastname" required>
+
+      <label id="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label id="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label id="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+  
+      <a href="{{ url_for('process') }}"> <input type="submit" value="Submit"> </a> 
+
+      <br> <br>
+    </form>
+</div>
+
+</head>
+<body>
+
+
+   <!---  News Headlines -->
+  <br> <br> <br>
+  <div class="inline-block">
+  	<p class="reasons" align="center">Reasons to Join as a Provider</p>
+  	    <onclick="window.open('/caredash.com','_blank')">
+        <img src ="../static/img/computer.jpg" class="headline_image"/> 
+        <img src ="../static/img/sick-child-drinking-cough-syrup-sm.jpg" class="headline_image"/> 
+        <img src ="../static/img/medical-billing-illustration-1-sm.jpg" class="headline_image"/>
+  </div>
+
+  <article>
+
+ 
+
+  <section id="sectionL">
+    "When choosing a primary care physician, patients typically rely on reviews from friends and family. When people go to the hospital, they’ll typically pick the one closest to their home instead of the one that offers the best prices and services. CareDash is aiming to change that."
+  </section>
+
+
+
+  <section id="sectionR">
+    "CareDash is founded on the steadfast promise to reject payments from doctors seeking to remove and hide negative reviews, a widely-used industry practice, thus, providing consumers the information they need to make more informed healthcare decisions."
+  </section>
+
+  <section id="sectionM">
+    "Reviews on CareDash are neutral. While many competitors accept advertising dollars from doctors, hospitals, practices, and the like, CareDash does not. "Our real focus is on representing the patients,”"<br> <br><br>
+  </section>
+
+</article>
+</body>
+
+<div class="inline-block">
+  <button class="learn_btn_l" onclick="window.location.href='https://medtechboston.medstro.com/blog/2017/07/07/caredash-yelpifies-finding-a-doctor/'">Learn More</button>
+  <button class="learn_btn_r" onclick="window.location.href='http://markets.businessinsider.com/news/stocks/caredash-announces-dr-arun-mohan-as-medical-advisor-to-mark-first-year-1002226328'">Learn More</button>
+  <button class="learn_btn_m" onclick="window.location.href='https://venturefizz.com/blog/caredash-helps-risk-families-find-physicians'">Learn More</button>
+</div>
+
+ <!---  Footer -->
+<div class="footer">
+  <div class="inline-block">
+  		<ul style="list-style-type: none; display: inline-block; float:left; padding: 70px">
+  		<li> <p class="pageText20"> CareDash</p></li>
+  		<li> <a href="https://www.caredash.com/about"> <p class="pageText"> About</p> </a></li>
+  		<li> <a href="https://www.caredash.com/contact-us"> <p class="pageText"> Contact</p></a></li>
+  		<li> <a href="https://www.caredash.com/review-your-doctor"> <p class="pageText"> Write A Review</p></a></li>
+    	</ul>
+
+
+    <ul style="list-style-type: none; display: inline-block; float:center; padding: 70px">
+  		<li> <p class="pageText20">Specialists</p></li>
+  		<li> <a href="https://www.caredash.com/find-a-primary-care-physician"><p class="pageText"> Primary Care Providers</p></a></li>
+  		<li> <a href="https://www.caredash.com/find-an-obgyn"><p class="pageText"> Obstetrics</p></a></li>
+  		<li> <a href="https://www.caredash.com/specialties/optometry"><p class="pageText"> Optometrists</p></a></li>
+  		<li> <a href="https://www.caredash.com/specialties/dentistry"><p class="pageText"> Dentists</p></a></li>
+    </ul>
+
+    <div class="social-media-buttons">
+	<div class="inline-block">
+	     <a href="https://www.facebook.com/caredash/"><i class="fa fa-facebook"></i></a></li> 
+	     <a href="https://twitter.com/caredash?lang=en"><i class="fa fa-twitter"></i></a></li> 
+	     <a href="https://www.instagram.com/caredash/"><i class="fa fa-instagram"></i></a></li> 
+	</div>
+	<br> <br>
+  </div>
+
+
+    <!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Add font awesome icons -->
+  
+
+  </div>
+</div>
+</div>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+click==6.7
+ez-setup==0.9
+Flask==0.12.2
+Flask-Assets==0.12
+Flask-SQLAlchemy==2.3.2
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+MySQL-python==1.2.5
+SQLAlchemy==1.2.6
+webassets==0.12.1
+Werkzeug==0.14.1
